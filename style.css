@@ -1,0 +1,574 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#container{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#left{
+    height: 89%;
+    width: 24%;
+    background-color: black;
+    padding: 5px;
+    margin: 13px;    
+}
+#right{
+    background: linear-gradient(to bottom, rgba(39, 37, 37, 0.823), rgba(32, 30, 30, 0.39));
+    height: 88%;
+    margin-right: 13px;  
+    margin-top: 13px;  
+    width: 76%;
+    overflow: hidden;
+}
+#up{
+    height: 23%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(25, 20, 20);
+}
+#down{
+    height: 75%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(25, 20, 20);
+    margin-top: 13px;
+}
+.img{
+    height: 31px;
+    width: 97px;
+    margin-left: 21px;
+    margin-top: 18px;
+}
+.home{
+    color: white;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 17px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.home h2{
+    margin-top: 4px;
+    margin-left:8px;
+    
+}
+#search {
+    margin-top: 27px;
+    color: rgb(148, 144, 144);
+}
+#search h2{
+    color: rgb(148, 144, 144);
+}
+#search h2:hover{
+    color: white;
+}
+#search:hover{
+    color: white;
+}
+.home i{
+    padding-right: 17px;
+    font-size: 30px;
+}
+.home h2:hover{
+    text-decoration: underline;
+    color: white;
+
+}
+#lib{
+    height: 31px;
+    width: 40px;
+    margin-left: 21px;
+    color: rgb(148, 144, 144);
+    margin-top: 18px;
+}
+.library{
+    display: flex;
+    justify-content: space-between;
+}
+.book{
+    display: flex;
+}
+#bosk{
+    color: rgb(148, 144, 144);
+}
+#bosk:hover{
+    color: white;
+}
+.book h2{
+    margin-top: 25px;
+}
+.cross{
+    margin: 25px;
+}
+#scrollable{
+    margin: 5px;
+    /* background-color: rgb(255, 0, 0); */
+    width: calc(97% + 9px);
+    height: 45%;
+    overflow: hidden; 
+}
+
+#scrollable:hover {
+  overflow: auto; 
+}
+#scrollable::-webkit-scrollbar{
+    width: 10px;
+}
+#scrollable::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, transparent, #30ff00);
+    border-radius: 10px;
+}
+
+.legal{
+    display: flex;
+    width: 80%;
+    margin-left: 18px;
+    margin-top: 50px;
+    justify-content: space-around;
+    color: rgb(228, 189, 189);
+    cursor: pointer;
+
+}
+.about{
+    display: flex;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 18px;
+    color: rgb(228, 189, 189);
+    justify-content: space-around;
+    cursor: pointer;
+
+}
+.cookies{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 24px;
+    color: rgb(228, 189, 189);
+    cursor: pointer;
+}
+#cookies:hover{
+    text-decoration: underline;
+}
+#lang{
+    font-weight: 700;
+    width: min-content;
+    font-family: sans-serif;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+#lang:hover{
+    transform: scale(1.03);
+    /* color: rgb(0, 0, 0); */
+}
+.sup{
+    margin: 5px;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px;
+    height: 53%;
+    border-radius: 14px;
+    width: 95%;
+    background-color: rgba(241, 241, 241, 0.118);
+}
+.sup h3{
+    margin-bottom: 10px;
+}
+
+#button{
+    border: 1px solid white;
+    width: 160px;
+    letter-spacing: 0.8px;
+    border-radius: 50px;
+    margin-top: 27px;
+    padding: 12px;
+    padding-left: 15px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+#button:hover{
+    transform: scale(1.04);
+}
+#sdown{
+    margin-top: 30px;
+}
+#button1{
+    border: 1px solid white;
+    width: 190px;
+    letter-spacing: 0.8px;
+    border-radius: 50px;
+    margin-top: 27px;
+    padding: 12px;
+    padding-left: 15px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+#button1:hover{
+    transform: scale(1.04);
+}
+
+nav{
+    width: 100%;
+    height: 9%;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+#sign{
+    display: flex;
+    
+}
+#arrow{
+    color: white;
+    font-size: 45px;
+    margin: 15px;
+    
+    gap: 10px;
+    padding-left: 10px;
+    font-weight: 100;
+}
+#arrow1{
+    background-color: black;
+    border-radius: 50%;
+}
+#arrow2{
+    background-color: black;
+    border-radius: 50%;
+}
+#signup{
+    color: rgb(148, 144, 144);
+    margin: 20px;
+    margin-right: 44px;
+    margin-top: 28px;
+    font-weight: 550;
+    font-family: sans-serif;
+    font-size: 19px;
+    cursor: pointer;
+}
+#signup:hover{
+    transform: scale(1.03);
+    color: white;
+}
+.button2{
+    border: 1px solid white;
+    background-color: white;
+    height: max-content;
+    width: 135px;
+    border-radius: 50px;
+    padding: 20px 0px 18px 37px;
+    margin-top: 7px;
+    font-weight: 550;
+    font-family: sans-serif;
+    font-size: 19px;
+    color: black;
+    margin-right: 37px;
+    cursor: pointer;
+}
+.button2:hover{
+    transform: scale(1.03);
+    color: rgb(0, 0, 0);
+}
+
+.zzz{
+    color: white;
+    font-family: sans-serif;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.zzz h1{
+    cursor: pointer;
+}
+.zzz h1:hover{
+    text-decoration: underline;
+}
+.zzz p{
+    margin: 10px 27px 0 0;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(148, 144, 144);
+
+}
+.zzz p:hover{
+    text-decoration: underline;
+    color: white;
+}
+.playlist1{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 32%;
+    left: 34.5%;
+    opacity: 0;
+    
+}
+.box:hover .logo{
+    opacity: 100%;
+    transition: all linear 0.5s;
+}
+.logo1{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 32%;
+    opacity: 0;
+    left: 49.3%; 
+}
+.box:hover .logo1{
+    opacity: 100%;
+    transition: all linear 0.5s;
+}
+.logo2{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 32%;
+    left: 64%;
+    opacity: 0;
+}
+.box:hover .logo2{
+    opacity: 100%;
+    transition: all linear 0.5s;
+}
+.logo3{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 32%;
+    opacity: 0;
+    left: 79%;
+}
+.box:hover .logo3{
+    opacity: 100%;
+    transition: all linear 0.5s;
+}
+.logo4{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 32%;
+    opacity: 0;
+    right: 3%;
+}
+.box:hover .logo4{
+    opacity: 100%;
+    transition: all linear 0.5s;
+}
+.logo5{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 75%;
+    left: 34.5%;
+    opacity: 0;
+}
+.box:hover .logo5{
+    opacity: 100%;
+    transition: all linear 0.5s;
+}
+.logo6{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 75%;
+    left: 49.3%; 
+    opacity: 0;
+}
+.box:hover .logo6{
+    opacity: 100%;
+    transition: all linear 0.5s;
+}
+
+.box{
+    background-color: rgba(31, 30, 30, 0.388);
+
+    height: 350px;
+    width: 250px;
+    margin:10px 0 0 10px;
+    border-radius: 15px;
+}
+.box:hover{
+    background-color: rgba(103, 100, 100, 0.377);
+    transition: all ease 0.2s;
+
+}
+.box .img{
+    height: 210px;
+    width: 210px;
+    margin: 15px 0 0 20px;
+    border-radius: 10px;
+}
+.box h1{
+    font-weight: 550;
+    font-family: sans-serif;
+    font-size: 19px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box p{
+    font-size: 17px;
+    font-family: sans-serif;
+    color: rgb(148, 144, 144);
+    font-weight: 600;
+    margin: 10px 0 0 20px;
+    line-height: 23px;
+}
+#playlkist2{
+    justify-content: start;
+    margin-left: 15px;
+    column-gap: 20px;
+}
+#right:hover {
+    overflow: auto; 
+  }
+#right::-webkit-scrollbar{
+    width: 10px;
+}
+#right::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, transparent, #30ff00);
+    border-radius: 10px;
+}
+footer{
+    display: flex;
+    justify-content: start;
+    margin-top: 120px;
+    margin-left: 35px;
+    margin-right: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.bottom{
+    line-height: 20px;
+}
+.bottom h1{
+    font-weight: 550;
+    font-family: sans-serif;
+    font-size: 19px;
+    color: white;
+}
+.bottom p{
+    font-size: 17px;
+    font-family: sans-serif;
+    color: rgb(148, 144, 144);
+    font-weight: 600;
+    cursor: pointer;
+}
+.bottom p:hover{
+    color: white;
+    text-decoration: underline;
+}
+#bottom2{
+    margin-left: 170px;
+    margin-right: 170px;
+}
+.links{
+    display: flex;
+    /* background-color: red; */
+    width: 46%;
+    justify-content: flex-end;
+    font-size: 25px;
+    column-gap: 20px;
+    height: max-content;
+    /* margin-left: 450px; */
+}
+#insta{
+    background-color: rgba(103, 100, 100, 0.377);
+    padding: 11px;
+    border-radius: 50%;
+    color: white;
+}
+#twitter{
+    background-color: rgba(103, 100, 100, 0.377);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+
+}
+#fb{
+    background-color: rgba(103, 100, 100, 0.377);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+#insta:hover{
+    background-color: rgb(137, 126, 126);
+}
+#twitter:hover{
+    background-color: rgb(137, 126, 126);
+}
+#fb:hover{
+    background-color: rgb(137, 126, 126);
+}
+.copyright{
+    margin-left: 35px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: rgb(148, 144, 144);
+    font-weight: 600;
+    cursor: pointer;
+}
+#niche{
+    position: absolute;
+    top: 90.7%;
+    height: 8%;
+    width: 99%;
+    left: 0.5%;
+    background: linear-gradient(to right, rgb(238, 28, 164), rgb(0, 213, 255));
+    display: flex;
+    justify-content: space-between;
+}
+.baya h2{
+    font-weight: 550;
+    font-family: sans-serif;
+    font-size: 19px;
+    color: white;
+    margin-left: 20px;
+}
+.baya h3{
+    font-weight: 550;
+    font-family: sans-serif;
+    font-size: 17px;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+#free{
+    border: 1px solid white;
+    width: 190px;
+    letter-spacing: 0.8px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 12px;
+    padding-left: 25px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+#free:hover{
+    transform: scale(1.03);
+    color: rgb(0, 0, 0);
+}
